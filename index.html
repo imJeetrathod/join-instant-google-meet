@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Auto Redirect</title>
+    <title>Redirect to Google Meet</title>
     <script type="text/javascript">
-        window.onload = function() {
-            // Redirect to the URL when the page loads
-            window.open("https://meet.new", "_blank");
-        };
+        function redirectToMeet() {
+            // Redirect the user to Google Meet in a new tab
+            window.open("https://meet.new");
+        }
     </script>
 </head>
 <body>
-    <h1>Enable Popup window</h1>
+    <h1>Enable Popup window or <a href="javascript:void(0);" onclick="redirectToMeet()">click here</a></h1>
 </body>
 </html>
