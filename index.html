@@ -1,17 +1,15 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Auto Redirect</title>
     <script type="text/javascript">
         window.onload = function() {
-            // Redirect to the URL when the page loads
-            window.open("https://meet.new");
+            // Redirect to the URL in the same tab when the page loads
+            window.location.href = "https://meet.new";
         };
     </script>
 </head>
 <body>
-    <h1>Enable Popup window or <a href="https://meet.new">click here </h1>
-
+    <h1>Enable Popup window or <a href="javascript:void(0);" onclick="window.location.href='https://meet.new';">click here</a></h1>
 </body>
 </html>
